@@ -16,3 +16,21 @@ body{
     margin-top: 10px;
     margin-left: 3%;
 }
+#logo2{
+    margin-left: 55%;
+    margin-top: -80px;
+}
+/* becouse of some reason btn doesnt look like best.. */
+#btn{
+    width: 20%;
+    height: 40px;
+    padding-top: 10px;
+    /* border: none; */
+    background-color: #000000;
+    font-family: 'Helvetica Neue';
+    font-size: 20px;
+    text-align: center;
+    margin-left: 40%;
+    margin-right:60%;
+    margin-top: 350px;
+}
