@@ -70,7 +70,7 @@ aboutmeInput.addEventListener("input", () => {
   const value = aboutmeInput.value;
   const newOutput = value.replace(/(.{30})/g, "$1<br>");
   if (value.startsWith("")) {
-    aboutmeOutput.innerHTML = `<div class="aboutme"><h2>About Me</h2></div>${newOutput}`;
+    aboutmeOutput.innerHTML = `<div class="aboutme"><h2>ჩემ შესახებ</h2></div>${newOutput}`;
   } else {
     aboutmeOutput.innerHTML = newOutput;
   }

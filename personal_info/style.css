@@ -52,8 +52,8 @@ span {
 .inputfields {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 0 10% 0 10%;
-    width: 100%;
+    padding-left: 10%;
+    width: 99%;
 }
 
 .form-group label {
