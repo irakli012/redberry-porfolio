@@ -60,3 +60,12 @@ input.addEventListener('change', (event) => {
 
   reader.readAsDataURL(file);
 });
+
+// DISPLAY ABOUT ME TEXT TO RIGHT SIDE
+
+const AboutmeInput = document.getElementById("aboutme");
+const AboutmeOutput = document.getElementById("aboutme-output");
+
+aboutme.addEventListener("input", () => {
+  AboutmeOutput.textContent = AboutmeInput.value;
+});

@@ -10,15 +10,15 @@
 <body>
     <div class="container">
         <div class="left-section">
-            <div class="header">
+            <header>
                 <div id="back-button">
                     <img src="media/Vector (7).png">
                 </div>
                 <span>პირადი ინფო</span>
                 <div id="line"></div>
-            </div>
+            </header>
+
             <div class="inputfields">
-                <div class="form-row-input">
                     <div class="form-group">
                       <label for="name">სახელი:</label>
                       <input type="text" id="name" name="name" required placeholder="ანზორ">
@@ -26,6 +26,7 @@
                       <img src="media/Vector (8).png" alt="ვალიდურია" class="success-img">
                       <small class="form-text text-muted"><br>მინიმუმ 2 ასო. ქართული ასოები</small>
                     </div>
+                    
                     <div class="form-group">
                       <label for="last-name">გვარი:</label>
                       <input type="text" id="last-name" name="last-name" required placeholder="მუმლაძე">
@@ -33,8 +34,8 @@
                       <img src="media/Vector (8).png" alt="ვალიდურია" class="success-img">
                       <small class="form-text text-muted"><br>მინიმუმ 2 ასო. ქართული ასოები</small>
                     </div>
-                </div>
             </div>
+
             <div class="personal-picture">
                 <h2>პირადი ფოტოს ატვირთვა:</h2>
                 <div class="upload-btn">
@@ -42,11 +43,13 @@
                     <label for="photo-upload">ატვირთვა</label>
                 </div>
             </div>
+
             <div class="aboutme">
                 <label for="name">ჩემ შესახებ (არასავალდებულო)</label>
                 <textarea name="aboutme" id="aboutme" cols="105" rows="10"></textarea>
             </div>
         </div>    
+
         <div class="right-section">
             <div id="name_lastname_output">
                 <div id="name-output"></div>
@@ -54,6 +57,9 @@
             </div>
             <div class="uploaded-image">
                 <img id="uploaded-img" src="">
+            </div>
+            <div class="textarea-output" id="aboutme-output">
+
             </div>
         </div>
     </div>
