@@ -76,3 +76,33 @@ aboutmeInput.addEventListener("input", () => {
   }
 });
 
+// GMAIL VALIDATION AND WRITE IN THE RIGHT SIDE
+
+const emailInput = document.getElementById("email-input");
+const validationMessage = document.getElementById("email-validation-message");
+const successImg = document.getElementById("success-img");
+const errorImg = document.getElementById("error-img");
+const vectorImg = document.getElementById("vector-img");
+const emailOutput = document.getElementById("email-output");
+
+emailInput.addEventListener("keyup", function() {
+  const email = emailInput.value;
+  const isValid = validateEmail(email);
+  if (isValid) {
+    validationMessage.textContent = "Valid email!";
+    validationMessage.style.color = "green";
+    successImg.style.display = "inline";
+    errorImg.style.display = "none";
+  } else {
+    validationMessage.textContent = "Invalid email. Must end with @redberry.ge";
+    validationMessage.style.color = "red";
+    successImg.style.display = "none";
+    errorImg.style.display = "inline";
+  }
+  emailOutput.textContent = email;
+});
+
+function validateEmail(email) {
+  const regex = /@redberry\.ge$/;
+  return regex.test(email);
+}

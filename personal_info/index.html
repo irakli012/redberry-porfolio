@@ -48,6 +48,14 @@
                 <label for="name">ჩემ შესახებ (არასავალდებულო)</label>
                 <textarea name="aboutme" id="aboutme" cols="99" rows="9"></textarea>
             </div>
+            <div class="type-email">
+                <label for="email">Email:</label>
+                <input type="email" id="email-input" name="email" placeholder="example@redberry.ge">
+                <img src="media/Vector (8).png" alt="Success" id="success-img" style="display: none;">
+                <img src="media/Vector (9).png" alt="Error" id="error-img" style="display: none;">
+                <div id="email-validation-message"></div>
+              </div>
+              
         </div>    
 
         <div class="right-section">
@@ -58,8 +66,10 @@
             <div class="uploaded-image">
                 <img id="uploaded-img" src="">
             </div>
-            <div class="textarea-output" id="aboutme-output">
-
+            <div id="email-output">
+                <img src="media/vector.png" alt="Vector" id="vector-img" style="display: none;">   
+            </div>
+            <div class="textarea-output" id="aboutme-output">      
             </div>
         </div>
     </div>
