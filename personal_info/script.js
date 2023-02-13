@@ -63,9 +63,16 @@ input.addEventListener('change', (event) => {
 
 // DISPLAY ABOUT ME TEXT TO RIGHT SIDE
 
-const AboutmeInput = document.getElementById("aboutme");
-const AboutmeOutput = document.getElementById("aboutme-output");
+const aboutmeInput = document.getElementById("aboutme");
+const aboutmeOutput = document.getElementById("aboutme-output");
 
-aboutme.addEventListener("input", () => {
-  AboutmeOutput.textContent = AboutmeInput.value;
+aboutmeInput.addEventListener("input", () => {
+  const value = aboutmeInput.value;
+  const newOutput = value.replace(/(.{30})/g, "$1<br>");
+  if (value.startsWith("")) {
+    aboutmeOutput.innerHTML = `<div class="aboutme"><h2>About Me</h2></div>${newOutput}`;
+  } else {
+    aboutmeOutput.innerHTML = newOutput;
+  }
 });
+
