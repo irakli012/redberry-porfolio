@@ -29,4 +29,19 @@ function validateInput(input) {
       validateInput(input);
     });
   });
+
+  // REAL TIME OUTPUT OF NAME AND LAST NAME AT THE RIGHT SIDE OF THE PAGE
+
+const firstNameInput = document.getElementById("name");
+const firstNameOutput = document.getElementById("name-output");
+const lastNameInput = document.getElementById("last-name");
+const lastNameOutput = document.getElementById("last-name-output");
+
+firstNameInput.addEventListener("input", () => {
+  firstNameOutput.textContent = firstNameInput.value;
+});
+
+lastNameInput.addEventListener("input", () => {
+  lastNameOutput.textContent = lastNameInput.value;
+});
   

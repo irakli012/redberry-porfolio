@@ -119,3 +119,15 @@ small {
     line-height: 27px;
     cursor: pointer;
 }
+#name_lastname_output{
+    display: flex;
+    gap: 15px;
+    margin-top: 3.9rem;
+    margin-left: 5%;
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 42px;
+    color: red;
+  }
