@@ -18,6 +18,7 @@
     grid-column: 2;
     background-color: white;
 }
+
 #back-button {
     display: inline-block;
     border-radius: 50%;
@@ -28,11 +29,13 @@
     margin-top: 30px;
     margin-left: 50px;
 }
+
 #back-button img {
     width: 15px;
     height: 15px;
     margin-top: 7.5px;
 }
+
 #line {
     width: 78%;    
     height: 1px;
@@ -40,6 +43,7 @@
     margin-top: 10px;
     margin-left: 11%; 
 }
+
 span {
     margin-left: 30px;
     font-family: 'Helvetica Neue';
@@ -52,10 +56,12 @@ span {
     flex-wrap: wrap;
     margin: 30px;
 }
+
 .form-group {
     flex: 1;
     margin-left: 82px;
 }
+
 .form-group label {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     size: 16px;
@@ -64,6 +70,7 @@ span {
     margin-top: 30px;
     margin-bottom: 5px;
 }
+
 .form-group input[type="text"] {
     padding: 8px;
     border-radius: 5px;
@@ -72,6 +79,7 @@ span {
     width: 80%;
     box-sizing: border-box;
 }
+
 small {
     color:rgb(129, 129, 129);
 }
@@ -86,18 +94,32 @@ small {
 .success-img.show {
     display:inline-block;
 }
+
+#name_lastname_output{
+    display: flex;
+    gap: 15px;
+    margin-top: 3.9rem;
+    margin-left: 5%;
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 42px;
+    color: red;
+  }
+
 .personal-picture{
     display: flex;
     margin-top: 5%;
 }
-  
+
 .personal-picture h2{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 18px;
     font-weight: 500;
     margin-left: 10.5%;
 }
-  
+
 .upload-btn {
     position: absolute;
     width: 107px;
@@ -119,15 +141,22 @@ small {
     line-height: 27px;
     cursor: pointer;
 }
-#name_lastname_output{
-    display: flex;
-    gap: 15px;
-    margin-top: 3.9rem;
-    margin-left: 5%;
-    font-family: 'Helvetica Neue';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 42px;
-    color: red;
+
+.uploaded-image {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    margin-top: 15px;
+    margin-right: 15px;
+    width: 250px;
+    height: 250px;
+    
   }
+  
+  .uploaded-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  

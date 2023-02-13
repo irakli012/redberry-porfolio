@@ -30,7 +30,7 @@ function validateInput(input) {
     });
   });
 
-  // REAL TIME OUTPUT OF NAME AND LAST NAME AT THE RIGHT SIDE OF THE PAGE
+// REAL TIME OUTPUT OF NAME AND LAST NAME AT THE RIGHT SIDE OF THE PAGE
 
 const firstNameInput = document.getElementById("name");
 const firstNameOutput = document.getElementById("name-output");
@@ -45,3 +45,18 @@ lastNameInput.addEventListener("input", () => {
   lastNameOutput.textContent = lastNameInput.value;
 });
   
+// DISPLAY UPLOADED PICTURE
+
+const input = document.getElementById('photo-upload');
+const img = document.getElementById('uploaded-img');
+
+input.addEventListener('change', (event) => {
+  const file = event.target.files[0];
+  const reader = new FileReader();
+
+  reader.addEventListener('load', (event) => {
+    img.src = event.target.result;
+  });
+
+  reader.readAsDataURL(file);
+});
